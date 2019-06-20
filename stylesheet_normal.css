@@ -1,0 +1,300 @@
+/* stylesheet normal version*/
+@font-face {
+	font-family:"kt";
+	src:
+	local("楷體"),local("楷體_GB2312"),
+	local("Kaiti"),local("Kaiti SC"),local("Kaiti TC"),
+	local("MKai PRC"),local("MKaiGB18030C-Medium"),local("MKaiGB18030C-Bold"),local("STKai"),
+	local("DK-KAITI"),
+	url(../Fonts/kt.ttf),
+	url(res:///opt/sony/ebook/FONT/kt.ttf),
+	url(res:///Data/FONT/kt.ttf),
+	url(res:///opt/sony/ebook/FONT/tt0011m_.ttf),
+	url(res:///ebook/fonts/../../mnt/sdcard/fonts/kt.ttf),
+	url(res:///ebook/fonts/../../mnt/extsd/fonts/kt.ttf),
+	url(res:///ebook/fonts/kt.ttf),
+	url(res:///ebook/fonts/DroidSansFallback.ttf),
+	url(res:///fonts/ttf/kt.ttf),
+	url(res:///../../media/mmcblk0p1/fonts/kt.ttf),
+	url(file:///mnt/us/DK_System/system/fonts/kt.ttf),
+	url(file:///mnt/us/DK_System/xKindle/res/userfonts/kt.ttf),
+	url(res:///mnt/us/fonts/kt.ttf),
+	url(res:///abook/fonts/kt.ttf),
+	url(res:///system/fonts/kt.ttf),
+	url(res:///system/media/sdcard/fonts/kt.ttf),
+	url(res:///media/fonts/kt.ttf),
+	url(res:///sdcard/fonts/kt.ttf),
+	url(res:///system/fonts/DroidSansFallback.ttf),
+	url(res:///mnt/MOVIFAT/font/kt.ttf),
+	url(res:///media/flash/fonts/kt.ttf),
+	url(res:///media/sd/fonts/kt.ttf),
+	url(res:///opt/onyx/arm/lib/fonts/AdobeHeitiStd-Regular.otf),
+	url(res:///../../fonts/kt.ttf),
+	url(res:///../fonts/kt.ttf),
+	url(../../../../../kt.ttf),
+	url(res:///mnt/sdcard/fonts/kt.ttf),
+	url(res:///fonts/kt.ttf),
+	url(res:///../../../../Windows/fonts/kt.ttf);/*,
+	url(res:///fonts/normal/kt),
+	url(res:///fonts/normal/KaiTi);*/
+}
+    
+.bold {
+    font-weight: bold
+    }
+    
+/* margin(top / right / bottom / left): 1em 0 1em 0 */    
+.calibre {
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+    margin: 0 5pt
+    }
+    
+.calibre_ {
+    display: block;
+    text-align: center;
+    text-indent: 0;
+    margin: 5em 0 0
+    }
+    
+.calibre_1 {
+    display: block;
+    height: 1em
+    }
+    
+.calibre_2 {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 1em;
+    margin-right: 0;
+    margin-top: 1em;
+    text-indent: 0
+    }
+    
+.calibre_3 {
+    display: list-item;
+    margin-top: 0;
+    text-indent: 0
+    }
+    
+.calibre_4 {
+    display: block;
+    list-style-type: circle;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    text-indent: 0
+    }
+    
+.calibre_5 {
+    display: block;
+    text-align: center;
+    text-indent: 0;
+    margin: 1em 0 2em 0;
+    }
+    
+.calibre_6 {
+    display: block;
+    text-align: center;
+    text-indent: 0;
+    margin: 0
+    }
+    
+.calibre_7 {
+    display: block;
+    text-align: center;
+    text-indent: 0;
+    margin: 4em 0 3em 0
+    }
+    
+.calibre_8 {
+    /* 正文 */
+    display: block;
+    text-align: justify;
+    text-indent: 2em;
+    margin: 2em 0 0
+    }
+    
+.calibre_9 {
+    /* 正文 */
+    display: block;
+    text-align: justify;
+    text-indent: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+    }
+    
+.calibre_10 {
+    display: block;
+    text-align: justify;
+    text-indent: 1em;
+    margin: 0
+    }
+    
+.calibre_11 {
+    display: block;
+    text-indent: -19pt;
+    margin: 1em 0 0 19pt
+    }
+    
+.calibre_12 {
+    display: block;
+    text-indent: 0;
+    margin: 0 0 0 2em
+    }
+    
+.calibre_13 {
+    display: block;
+    text-indent: -19pt;
+    margin: 0 0 0 19pt
+    }
+    
+.calibre1 {
+    font-size: 1.83333em;
+    line-height: 1.2
+    }
+    
+.calibre2 {
+    font-size: 1.41667em;
+    line-height: 1.2;
+    }
+    
+.calibre3 {
+    font-size: 1.125em;
+    line-height: 1.2
+    }
+    
+.calibre4 {
+    font-size: 1.66667em;
+    line-height: 1.2
+    }
+    
+.calibre5 {
+    display: block
+    }
+    
+.italic {
+    font-style: italic
+    }
+    
+.mbp_pagebreak {
+    display: block;
+    margin: 0
+    }
+
+.author_right {
+    /* 作者（右對齊）*/
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+    margin-top: 0.8em;
+    }
+    
+.author_right_no_gap {
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+    
+.qu {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 2em;
+    margin: 0.8em;
+}
+
+.qu_no_gap {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 2em;
+    /* margin-top: 0.5em;
+    margin-bottom: 0.5em;*/  
+    margin: 0;    
+}
+
+.qu_mark {
+    /*font-family:宋体;*/
+    color: #006b6b;
+}
+
+.ci {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 2em;
+    margin: 0.8em;
+}
+   
+.ci_no_gap {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 2em;
+    /* margin-top: 0.5em;
+    margin-bottom: 0.5em;*/  
+    margin: 0;    
+}
+   
+.duanluo {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 2em; 
+    margin: 0.8em;
+}
+
+.duanluo_zun_head {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 2em;     
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+     
+.duanluo_zun {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 0em;     
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+}
+     
+.duanluo_right {
+    font-family:"kt";
+    text-align: right;
+    margin: 0;
+    margin-right:0.8em;
+}
+     
+.shi {
+    display: block;
+    font-family:"kt";
+    text-align: justify;
+    text-indent: 4em;
+    /* margin-top: 0.5em;
+    margin-bottom: 0.5em;*/    
+    margin: 0;
+}
+ 
+.flower {
+    clear: both; 
+    display: block; 
+    max-width: 100%;
+    max-height: 100%;
+    margin:auto; 
+}
+    

@@ -1,0 +1,753 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="zho">
+  <head>
+    <meta content="fd097af7-f086-4175-9377-87c274760fe2" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (3.37.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  
+  <docTitle>
+    <text>金瓶梅詞話[夢梅館校本]</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="num_0" playOrder="1">
+      <navLabel>
+        <text>版權頁</text>
+      </navLabel>
+      <content src="Text/index_split_000.html"/>   
+    </navPoint>
+    
+    <navPoint class="chapter" id="num_1" playOrder="1">
+      <navLabel>
+        <text>目錄</text>
+      </navLabel>
+      <content src="Text/index_split_001.html"/>   
+    </navPoint>
+      
+    <navPoint class="chapter" id="num_2" playOrder="2">
+      <navLabel>
+        <text>前言</text>
+      </navLabel>
+      <content src="Text/index_split_002.html"/>          
+          <navPoint class="chapter" id="num_3" playOrder="3">
+            <navLabel>
+              <text>夢梅館校本《金瓶梅詞話》前言</text>
+            </navLabel>
+            <content src="Text/index_split_003.html"/>
+          </navPoint>      
+          <navPoint class="chapter" id="num_4" playOrder="4">
+            <navLabel>
+              <text>金瓶梅詞話序</text>
+            </navLabel>
+            <content src="Text/index_split_005.html"/>
+          </navPoint>
+          <navPoint class="chapter" id="num_5" playOrder="5">
+            <navLabel>
+              <text>跋</text>
+            </navLabel>
+            <content src="Text/index_split_006.html"/>
+          </navPoint>
+          <navPoint class="chapter" id="num_6" playOrder="6">
+            <navLabel>
+              <text>金瓶梅序</text>
+            </navLabel>
+            <content src="Text/index_split_007.html"/>
+          </navPoint>
+          <navPoint class="chapter" id="num_7" playOrder="7">
+            <navLabel>
+              <text>新刻金瓶梅詞話</text>
+            </navLabel>
+            <content src="Text/index_split_008.html"/>
+          </navPoint>
+          <navPoint class="chapter" id="num_8" playOrder="8">
+            <navLabel>
+              <text>四貪詞</text>
+            </navLabel>
+            <content src="Text/index_split_009.html"/>
+          </navPoint>
+    </navPoint>
+    
+    <navPoint class="chapter" id="num_9" playOrder="9">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之一</text>
+      </navLabel>
+      <content src="Text/index_split_010.html"/>
+      <navPoint class="chapter" id="num_10" playOrder="10">
+        <navLabel>
+          <text>第一回 景陽岡武松打虎　潘金蓮嫌夫賣風月</text>
+        </navLabel>
+        <content src="Text/index_split_011.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_11" playOrder="11">
+        <navLabel>
+          <text>第二回 西門慶簾下遇金蓮　王婆子貪賄說風情</text>
+        </navLabel>
+        <content src="Text/index_split_012.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_12" playOrder="12">
+        <navLabel>
+          <text>第三回 王婆定十件挨光計　西門慶茶房戲金蓮</text>
+        </navLabel>
+        <content src="Text/index_split_013.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_13" playOrder="13">
+        <navLabel>
+          <text>第四回 淫婦背武大偷奸　鄆哥不憤鬧茶肆</text>
+        </navLabel>
+        <content src="Text/index_split_014.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_14" playOrder="14">
+        <navLabel>
+          <text>第五回 鄆哥幫捉罵王婆　淫婦藥酖武大郎</text>
+        </navLabel>
+        <content src="Text/index_split_015.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_15" playOrder="15">
+        <navLabel>
+          <text>第六回 西門慶買囑何九　王婆打酒遇大雨</text>
+        </navLabel>
+        <content src="Text/index_split_016.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_16" playOrder="16">
+        <navLabel>
+          <text>第七回 薛婆兒說娶孟玉樓　楊姑娘氣罵張四舅</text>
+        </navLabel>
+        <content src="Text/index_split_017.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_17" playOrder="17">
+        <navLabel>
+          <text>第八回 潘金蓮永夜盼西門慶　燒夫靈和尚聽淫聲</text>
+        </navLabel>
+        <content src="Text/index_split_018.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_18" playOrder="18">
+        <navLabel>
+          <text>第九回 西門慶計娶潘金蓮　武都頭誤打李外傳</text>
+        </navLabel>
+        <content src="Text/index_split_019.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_19" playOrder="19">
+        <navLabel>
+          <text>第十回 武二充配孟州道　妻妾宴賞芙蓉亭</text>
+        </navLabel>
+        <content src="Text/index_split_020.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_20" playOrder="20">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之二</text>
+      </navLabel>
+      <content src="Text/index_split_021.html"/>
+      <navPoint class="chapter" id="num_21" playOrder="21">
+        <navLabel>
+          <text>第十一回 潘金蓮激打孫雪娥　西門慶梳籠李桂姐</text>
+        </navLabel>
+        <content src="Text/index_split_022.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_22" playOrder="22">
+        <navLabel>
+          <text>第十二回 潘金蓮私僕受辱　劉理星魘勝貪財</text>
+        </navLabel>
+        <content src="Text/index_split_023.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_23" playOrder="23">
+        <navLabel>
+          <text>第十三回 李瓶兒隔牆密約　迎春女窺隙偷光</text>
+        </navLabel>
+        <content src="Text/index_split_024.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_24" playOrder="24">
+        <navLabel>
+          <text>第十四回 花子虛因氣喪身　李瓶兒送奸赴會</text>
+        </navLabel>
+        <content src="Text/index_split_025.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_25" playOrder="25">
+        <navLabel>
+          <text>第十五回 佳人笑賞玩燈樓　狎客幫嫖麗春院</text>
+        </navLabel>
+        <content src="Text/index_split_026.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_26" playOrder="26">
+        <navLabel>
+          <text>第十六回 西門慶謀財娶婦　應伯爵慶喜追歡</text>
+        </navLabel>
+        <content src="Text/index_split_027.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_27" playOrder="27">
+        <navLabel>
+          <text>第十七回 宇給事劾倒楊提督　李瓶兒招贅蔣竹山</text>
+        </navLabel>
+        <content src="Text/index_split_028.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_28" playOrder="28">
+        <navLabel>
+          <text>第十八回 來保上東京幹事　陳經濟花園管工</text>
+        </navLabel>
+        <content src="Text/index_split_029.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_29" playOrder="29">
+        <navLabel>
+          <text>第十九回 草裏蛇邏打蔣竹山　李瓶兒情感西門慶</text>
+        </navLabel>
+        <content src="Text/index_split_030.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_30" playOrder="30">
+        <navLabel>
+          <text>第二十回 孟玉樓義勸吳月娘　西門慶大鬧麗春院</text>
+        </navLabel>
+        <content src="Text/index_split_031.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_31" playOrder="31">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之三</text>
+      </navLabel>
+      <content src="Text/index_split_032.html"/>
+      <navPoint class="chapter" id="num_32" playOrder="32">
+        <navLabel>
+          <text>第二十一回 吳月娘掃雪烹茶　應伯爵替花勾使</text>
+        </navLabel>
+        <content src="Text/index_split_033.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_33" playOrder="33">
+        <navLabel>
+          <text>第二十二回 西門慶私淫來旺婦　春梅正色罵李銘</text>
+        </navLabel>
+        <content src="Text/index_split_034.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_34" playOrder="34">
+        <navLabel>
+          <text>第二十三回 玉簫觀風賽月房　金蓮竊聽藏春塢</text>
+        </navLabel>
+        <content src="Text/index_split_035.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_35" playOrder="35">
+        <navLabel>
+          <text>第二十四回 陳經濟元夜戲嬌姿　惠祥怒詈來旺婦</text>
+        </navLabel>
+        <content src="Text/index_split_036.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_36" playOrder="36">
+        <navLabel>
+          <text>第二十五回 雪娥透露蝶蜂情　來旺醉謗西門慶</text>
+        </navLabel>
+        <content src="Text/index_split_037.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_37" playOrder="37">
+        <navLabel>
+          <text>第二十六回 來旺兒遞解徐州　宋惠連含羞自縊</text>
+        </navLabel>
+        <content src="Text/index_split_038.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_38" playOrder="38">
+        <navLabel>
+          <text>第二十七回 李瓶兒私語翡翠軒　潘金蓮醉鬧葡萄架</text>
+        </navLabel>
+        <content src="Text/index_split_039.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_39" playOrder="39">
+        <navLabel>
+          <text>第二十八回 陳經濟因鞋戲金蓮　西門慶怒打鐵棍兒</text>
+        </navLabel>
+        <content src="Text/index_split_040.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_40" playOrder="40">
+        <navLabel>
+          <text>第二十九回 吳神僊貴賤相人　潘金蓮蘭湯午戰</text>
+        </navLabel>
+        <content src="Text/index_split_041.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_41" playOrder="41">
+        <navLabel>
+          <text>第三十回 來保押送生辰擔　西門慶生子喜加官</text>
+        </navLabel>
+        <content src="Text/index_split_042.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_42" playOrder="42">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之四</text>
+      </navLabel>
+      <content src="Text/index_split_043.html"/>
+      <navPoint class="chapter" id="num_43" playOrder="43">
+        <navLabel>
+          <text>第三十一回 琴童藏壺覷玉簫　西門慶開宴吃喜酒</text>
+        </navLabel>
+        <content src="Text/index_split_044.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_44" playOrder="44">
+        <navLabel>
+          <text>第三十二回 李桂姐拜娘認女　應伯爵打渾趨時</text>
+        </navLabel>
+        <content src="Text/index_split_045.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_45" playOrder="45">
+        <navLabel>
+          <text>第三十三回 陳經濟失鑰罰唱　韓道國縱婦爭鋒</text>
+        </navLabel>
+        <content src="Text/index_split_046.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_46" playOrder="46">
+        <navLabel>
+          <text>第三十四回 書僮兒因寵攬事　平安兒含恨戳舌</text>
+        </navLabel>
+        <content src="Text/index_split_047.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_47" playOrder="47">
+        <navLabel>
+          <text>第三十五回 西門慶挾恨責平安　書僮兒妝旦勸狎客</text>
+        </navLabel>
+        <content src="Text/index_split_048.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_48" playOrder="48">
+        <navLabel>
+          <text>第三十六回 翟謙寄書尋女子　西門慶結交蔡狀元</text>
+        </navLabel>
+        <content src="Text/index_split_049.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_49" playOrder="49">
+        <navLabel>
+          <text>第三十七回 馮媽媽說嫁韓氏女　西門慶包占王六兒</text>
+        </navLabel>
+        <content src="Text/index_split_050.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_50" playOrder="50">
+        <navLabel>
+          <text>第三十八回 西門慶夾打二搗鬼　潘金蓮雪夜弄琵琶</text>
+        </navLabel>
+        <content src="Text/index_split_051.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_51" playOrder="51">
+        <navLabel>
+          <text>第三十九回 西門慶玉皇廟打醮　吳月娘聽尼僧說經</text>
+        </navLabel>
+        <content src="Text/index_split_052.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_52" playOrder="52">
+        <navLabel>
+          <text>第四十回 抱孩童瓶兒希寵　妝丫鬟金蓮市愛</text>
+        </navLabel>
+        <content src="Text/index_split_053.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_53" playOrder="53">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之五</text>
+      </navLabel>
+      <content src="Text/index_split_054.html"/>
+      <navPoint class="chapter" id="num_54" playOrder="54">
+        <navLabel>
+          <text>第四十一回 西門慶與喬大戶結親　潘金蓮共李瓶兒鬭氣</text>
+        </navLabel>
+        <content src="Text/index_split_055.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_55" playOrder="55">
+        <navLabel>
+          <text>第四十二回 豪家攔門玩煙火　貴客高樓醉賞燈</text>
+        </navLabel>
+        <content src="Text/index_split_056.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_56" playOrder="56">
+        <navLabel>
+          <text>第四十三回 為失金西門慶罵金蓮　因結親月娘會喬太太</text>
+        </navLabel>
+        <content src="Text/index_split_057.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_57" playOrder="57">
+        <navLabel>
+          <text>第四十四回 吳月娘留宿李桂姐　西門慶醉拶夏花兒</text>
+        </navLabel>
+        <content src="Text/index_split_058.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_58" playOrder="58">
+        <navLabel>
+          <text>第四十五回 桂姐央留夏花兒　月娘含怒罵玳安</text>
+        </navLabel>
+        <content src="Text/index_split_059.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_59" playOrder="59">
+        <navLabel>
+          <text>第四十六回 元夜遊行遇雪雨　妻妾笑卜龜兒卦</text>
+        </navLabel>
+        <content src="Text/index_split_060.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_60" playOrder="60">
+        <navLabel>
+          <text>第四十七回 王六兒說事圖財　西門慶受贓枉法</text>
+        </navLabel>
+        <content src="Text/index_split_061.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_61" playOrder="61">
+        <navLabel>
+          <text>第四十八回 曾御史參劾提刑官　蔡太師奏行七件事</text>
+        </navLabel>
+        <content src="Text/index_split_062.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_62" playOrder="62">
+        <navLabel>
+          <text>第四十九回 西門慶迎請宋巡按　永福寺餞行遇胡僧</text>
+        </navLabel>
+        <content src="Text/index_split_063.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_63" playOrder="63">
+        <navLabel>
+          <text>第五十回 琴童潛聽燕鶯歡　玳安嬉游蝴蝶巷</text>
+        </navLabel>
+        <content src="Text/index_split_064.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_64" playOrder="64">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之六</text>
+      </navLabel>
+      <content src="Text/index_split_065.html"/>
+      <navPoint class="chapter" id="num_65" playOrder="65">
+        <navLabel>
+          <text>第五十一回 月娘聽演金剛科　桂姐躲在西門宅</text>
+        </navLabel>
+        <content src="Text/index_split_066.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_66" playOrder="66">
+        <navLabel>
+          <text>第五十二回 應伯爵山洞戲春嬌　潘金蓮花園看蘑菇</text>
+        </navLabel>
+        <content src="Text/index_split_067.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_67" playOrder="67">
+        <navLabel>
+          <text>第五十三回 吳月娘承歡求子息　李瓶兒酬願保兒童</text>
+        </navLabel>
+        <content src="Text/index_split_068.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_68" playOrder="68">
+        <navLabel>
+          <text>第五十四回 應伯爵郊園會諸友　任醫官豪家看病症</text>
+        </navLabel>
+        <content src="Text/index_split_069.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_69" playOrder="69">
+        <navLabel>
+          <text>第五十五回 西門慶東京慶壽旦　苗員外揚州送歌童</text>
+        </navLabel>
+        <content src="Text/index_split_070.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_70" playOrder="70">
+        <navLabel>
+          <text>第五十六回 西門慶周濟常時節　應伯爵舉薦水秀才</text>
+        </navLabel>
+        <content src="Text/index_split_071.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_71" playOrder="71">
+        <navLabel>
+          <text>第五十七回 道長老募修永福寺　薛姑子勸捨陀羅經</text>
+        </navLabel>
+        <content src="Text/index_split_072.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_72" playOrder="72">
+        <navLabel>
+          <text>第五十八回 懷妒忌金蓮打秋菊　乞臘肉磨鏡叟訴冤</text>
+        </navLabel>
+        <content src="Text/index_split_073.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_73" playOrder="73">
+        <navLabel>
+          <text>第五十九回 西門慶摔死雪獅子　李瓶兒痛哭官哥兒</text>
+        </navLabel>
+        <content src="Text/index_split_074.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_74" playOrder="74">
+        <navLabel>
+          <text>第六十回 李瓶兒因暗氣惹病　西門慶立緞鋪開張</text>
+        </navLabel>
+        <content src="Text/index_split_075.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_75" playOrder="75">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之七</text>
+      </navLabel>
+      <content src="Text/index_split_076.html"/>
+      <navPoint class="chapter" id="num_76" playOrder="76">
+        <navLabel>
+          <text>第六十一回 韓道國筵請西門慶　李瓶兒苦痛宴重陽</text>
+        </navLabel>
+        <content src="Text/index_split_077.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_77" playOrder="77">
+        <navLabel>
+          <text>第六十二回 潘道士解禳祭燈壇　西門慶大哭李瓶兒</text>
+        </navLabel>
+        <content src="Text/index_split_078.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_78" playOrder="78">
+        <navLabel>
+          <text>第六十三回 親朋祭奠開筵宴　西門慶觀戲感李瓶</text>
+        </navLabel>
+        <content src="Text/index_split_079.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_79" playOrder="79">
+        <navLabel>
+          <text>第六十四回 玉簫跪央潘金蓮　合衛官祭富室娘</text>
+        </navLabel>
+        <content src="Text/index_split_080.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_80" playOrder="80">
+        <navLabel>
+          <text>第六十五回 吳道官迎殯頒真容　宋御史結豪請六黃</text>
+        </navLabel>
+        <content src="Text/index_split_081.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_81" playOrder="81">
+        <navLabel>
+          <text>第六十六回 翟管家寄書致賻　黃真人煉度薦亡</text>
+        </navLabel>
+        <content src="Text/index_split_082.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_82" playOrder="82">
+        <navLabel>
+          <text>第六十七回 西門慶書房賞雪　李瓶兒夢訴幽情</text>
+        </navLabel>
+        <content src="Text/index_split_083.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_83" playOrder="83">
+        <navLabel>
+          <text>第六十八回 鄭月兒賣俏透密意　玳安慇勤尋文嫂</text>
+        </navLabel>
+        <content src="Text/index_split_084.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_84" playOrder="84">
+        <navLabel>
+          <text>第六十九回 文嫂通情林太太　王三官中詐求奸</text>
+        </navLabel>
+        <content src="Text/index_split_085.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_85" playOrder="85">
+        <navLabel>
+          <text>第七十回 西門慶工完陞級　群僚庭參朱太尉</text>
+        </navLabel>
+        <content src="Text/index_split_086.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_86" playOrder="86">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之八</text>
+      </navLabel>
+      <content src="Text/index_split_087.html"/>
+      <navPoint class="chapter" id="num_87" playOrder="87">
+        <navLabel>
+          <text>第七十一回 李瓶兒何千戶家托夢　提刑官引奏朝儀</text>
+        </navLabel>
+        <content src="Text/index_split_088.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_88" playOrder="88">
+        <navLabel>
+          <text>第七十二回 王三官拜西門為義父　應伯爵替李銘釋冤</text>
+        </navLabel>
+        <content src="Text/index_split_089.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_89" playOrder="89">
+        <navLabel>
+          <text>第七十三回 潘金蓮不憤憶吹簫　郁大姐夜唱鬧五更</text>
+        </navLabel>
+        <content src="Text/index_split_090.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_90" playOrder="90">
+        <navLabel>
+          <text>第七十四回 宋御史索求八僊鼎　吳月娘聽宣黃氏卷</text>
+        </navLabel>
+        <content src="Text/index_split_091.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_91" playOrder="91">
+        <navLabel>
+          <text>第七十五回 春梅毀罵申二姐　玉簫愬言潘金蓮</text>
+        </navLabel>
+        <content src="Text/index_split_092.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_92" playOrder="92">
+        <navLabel>
+          <text>第七十六回 孟玉樓解慍吳月娘　西門慶斥逐溫葵軒</text>
+        </navLabel>
+        <content src="Text/index_split_093.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_93" playOrder="93">
+        <navLabel>
+          <text>第七十七回 西門慶踏雪訪愛月　賁四嫂倚牖盼佳期</text>
+        </navLabel>
+        <content src="Text/index_split_094.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_94" playOrder="94">
+        <navLabel>
+          <text>第七十八回 西門慶兩戰林太太　吳月娘玩燈請藍氏</text>
+        </navLabel>
+        <content src="Text/index_split_095.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_95" playOrder="95">
+        <navLabel>
+          <text>第七十九回 西門慶貪慾得病　吳月娘墓生產子</text>
+        </navLabel>
+        <content src="Text/index_split_096.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_96" playOrder="96">
+        <navLabel>
+          <text>第八十回 陳經濟竊玉偷香　李嬌兒盜財歸院</text>
+        </navLabel>
+        <content src="Text/index_split_097.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_97" playOrder="97">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之九</text>
+      </navLabel>
+      <content src="Text/index_split_098.html"/>
+      <navPoint class="chapter" id="num_98" playOrder="98">
+        <navLabel>
+          <text>第八十一回 韓道國拐財倚勢　湯來保欺主背恩</text>
+        </navLabel>
+        <content src="Text/index_split_099.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_99" playOrder="99">
+        <navLabel>
+          <text>第八十二回 潘金蓮月夜偷期　陳經濟畫樓雙羙</text>
+        </navLabel>
+        <content src="Text/index_split_100.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_100" playOrder="100">
+        <navLabel>
+          <text>第八十三回 秋菊含恨洩幽情　春梅寄柬諧佳會</text>
+        </navLabel>
+        <content src="Text/index_split_101.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_101" playOrder="101">
+        <navLabel>
+          <text>第八十四回 吳月娘大鬧碧霞宮　宋公明義釋清風寨</text>
+        </navLabel>
+        <content src="Text/index_split_102.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_102" playOrder="102">
+        <navLabel>
+          <text>第八十五回 月娘識破金蓮姦情　薛嫂月夜賣春梅</text>
+        </navLabel>
+        <content src="Text/index_split_103.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_103" playOrder="103">
+        <navLabel>
+          <text>第八十六回 雪娥唆打陳經濟　王婆售利嫁金蓮</text>
+        </navLabel>
+        <content src="Text/index_split_104.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_104" playOrder="104">
+        <navLabel>
+          <text>第八十七回 王婆子貪財受報　武都頭殺嫂祭兄</text>
+        </navLabel>
+        <content src="Text/index_split_105.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_105" playOrder="105">
+        <navLabel>
+          <text>第八十八回 潘金蓮托夢守禦府　吳月娘佈施募緣僧</text>
+        </navLabel>
+        <content src="Text/index_split_106.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_106" playOrder="106">
+        <navLabel>
+          <text>第八十九回 清明節寡婦上新墳　吳月娘誤入永福寺</text>
+        </navLabel>
+        <content src="Text/index_split_107.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_107" playOrder="107">
+        <navLabel>
+          <text>第九十回 來旺盜拐孫雪娥　雪娥官賣守備府</text>
+        </navLabel>
+        <content src="Text/index_split_108.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_108" playOrder="108">
+      <navLabel>
+        <text>夢梅館本金瓶梅詞話卷之十</text>
+      </navLabel>
+      <content src="Text/index_split_109.html"/>
+      <navPoint class="chapter" id="num_109" playOrder="109">
+        <navLabel>
+          <text>第九十一回 孟玉樓愛嫁李衙內　李衙內怒打玉簪兒</text>
+        </navLabel>
+        <content src="Text/index_split_110.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_110" playOrder="110">
+        <navLabel>
+          <text>第九十二回 陳經濟被陷嚴州府　吳月娘大鬧授官廳</text>
+        </navLabel>
+        <content src="Text/index_split_111.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_111" playOrder="111">
+        <navLabel>
+          <text>第九十三回 王杏庵仗義賙貧　任道士因財惹禍</text>
+        </navLabel>
+        <content src="Text/index_split_112.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_112" playOrder="112">
+        <navLabel>
+          <text>第九十四回 劉二醉毆陳經濟　洒家店雪娥為娼</text>
+        </navLabel>
+        <content src="Text/index_split_113.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_113" playOrder="113">
+        <navLabel>
+          <text>第九十五回 平安偷盜假當物　薛嫂喬計說人情</text>
+        </navLabel>
+        <content src="Text/index_split_114.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_114" playOrder="114">
+        <navLabel>
+          <text>第九十六回 春梅遊玩舊家池館　守備使張勝尋經濟</text>
+        </navLabel>
+        <content src="Text/index_split_115.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_115" playOrder="115">
+        <navLabel>
+          <text>第九十七回 經濟守禦府用事　薛嫂賣花說姻親</text>
+        </navLabel>
+        <content src="Text/index_split_116.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_116" playOrder="116">
+        <navLabel>
+          <text>第九十八回 陳經濟臨清開大店　韓愛姐翠館遇情郎</text>
+        </navLabel>
+        <content src="Text/index_split_117.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_117" playOrder="117">
+        <navLabel>
+          <text>第九十九回 劉二醉罵王六兒　張勝忿殺陳經濟</text>
+        </navLabel>
+        <content src="Text/index_split_118.html"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_118" playOrder="118">
+        <navLabel>
+          <text>第一百回 韓愛姐湖州尋父　普靜師薦拔群冤</text>
+        </navLabel>
+        <content src="Text/index_split_119.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint class="chapter" id="num_119" playOrder="119">
+      <navLabel>
+        <text>附錄</text>
+      </navLabel>
+      <content src="Text/index_split_120.html"/>      
+        <navPoint class="chapter" id="num_120" playOrder="120">
+        <navLabel>
+          <text>校者弁言</text>
+        </navLabel>
+        <content src="Text/index_split_121.html"/>
+        </navPoint>
+
+        <navPoint class="chapter" id="num_121" playOrder="121">
+        <navLabel>
+          <text>抄余綴語</text>
+        </navLabel>
+        <content src="Text/index_split_122.html"/>
+        </navPoint>    
+    </navPoint>
+
+  </navMap>
+</ncx>
