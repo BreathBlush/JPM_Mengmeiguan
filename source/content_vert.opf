@@ -137,8 +137,8 @@
     <item href="Text/index_split_120.html" id="id12" media-type="application/xhtml+xml"/>
     <item href="Text/index_split_121.html" id="id11" media-type="application/xhtml+xml"/>
     <item href="Text/index_split_122.html" id="id10" media-type="application/xhtml+xml"/>
-    <item href="Text/page_styles.css" id="page_css" media-type="text/css"/>
-    <item href="Text/stylesheet.css" id="css" media-type="text/css"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
     <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml"/>
     <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
   </manifest>
