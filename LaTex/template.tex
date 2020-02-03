@@ -1,0 +1,44 @@
+\documentclass[a5paper, 11pt]{ltjtbook} %ltjbook%
+\usepackage{luatexja}
+\usepackage{luatexja-fontspec}
+\usepackage[a5paper, scale = 0.75, centering]{geometry}
+\usepackage{moresize}
+\usepackage{tocloft}
+\usepackage[hidelinks, plainpages = false, unicode = true]{hyperref}
+\usepackage{bookmark}
+\usepackage{endnotes}
+
+%\setmainfont{Arno Pro}
+%\setsansfont{Myriad Pro}
+
+\setmainjfont[BoldFont = SourceHanSerifTC-Bold.otf]{SourceHanSerifTC-Regular.otf}
+\setsansjfont[BoldFont = SourceHanSansTC-Bold.otf]{SourceHanSansTC-Regular.otf}
+\newjfontfamily{\quotejfont}{FZKT_GB18030.ttf}
+% \newjfontfamily{\quotejfont}{SourceHanSansTC-Regular.otf}
+
+\setlength\columnsep{3\Cwd}
+\setlength\parindent{2em}
+\setlength{\parskip}{0.5em} 
+
+\def\enoteheading{\section*{\notesname}%
+  %\markboth{\notesname}{\notesname}}%
+  \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
+\makeatother
+  
+\let\quotationold\quotation
+\let\endquotationold\endquotation
+\renewenvironment{quotation}{\quotejfont\quotationold}{\endquotationold}
+
+\renewcommand{\contentsname}{目錄}
+\renewcommand{\cftchapfont}{}
+\renewcommand{\cftchappagefont}{}
+\renewcommand{\notesname}{注}
+
+\input{title}
+\date{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\input{contents}
+\end{document}
