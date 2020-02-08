@@ -1,16 +1,16 @@
-LuaLatex 字体缓冲建立：luaotfload-tool --update --force
+LuaLatex 字体缓冲建立：$luaotfload-tool --update --force / $sudo updmap or $updmap-sys	/ $updmap-user / $updmap --sys --force
 TexLive 字体配置： texlive-fontconfig.conf
 TexLive 字体路径：/usr/local/texlive/2019/texmf-dist/fonts
 
-Latex 手动安装宏包(.sty):
-    (1)拷贝宏包文件：$sudo mv ~/Desktop/nips14submit_e.sty /usr/local/texlive/2018/texmf-dist/tex/latex 
-	（2）sudo texthash更新hash
+$mktexfmt latex.fmt / xetex.fmt
+
+$sudo mktexlsr. 刷新字体
 
 （1）使用：LuaLatex（不要在非ASCII目录下运行！模版文件名应该为ASCII码）:
 
 （1.1）编译：lualatex xxx.tex  如果一切正确，将生成输出pdf文件
 （1.2）基础模版参考：
-\documentclass[a4paper, oneside]{ltjtbook} / ltjbook
+\documentclass[a4paper, oneside]{ltjtbook}
 \usepackage{luatexja}
 \usepackage{luacode}
 \usepackage{luatexja-fontspec}
@@ -32,18 +32,33 @@ Latex 手动安装宏包(.sty):
 \input{contents}
 \end{document}
 
-\begin{quotation}
-\end{quotation}
+\includepdf[pages={26},fitpaper=true]{tst.pdf}
 
-\endnote{〈note〉}  或者 \footnote{<note>}
-\setcounter{footnote}{0}
-\theendnotes
+\let\quotationold\quotation
+\let\endquotationold\endquotation
+\renewenvironment{quotation}{\kaishu\quotationold}{\endquotationold}
+
+自定义环境：
+\newenvironment{myquote0}{%
+\vspace{0.5em}\everypar{\noindent\setlength{\hangindent}{0em}\hangafter=0}\kaishu\raggedright}
+{\par%
+\vspace{0.5em}
+}
+
+\newenvironment{myquote}[1][\setlength{\hangindent}{4em}]{%
+\vspace{0.5em}\everypar{\noindent#1\hangafter=0}\kaishu\raggedright}
+{\par%
+\vspace{0.5em}
+}
+
 
 （1.3）字体文件的安装：
     LuaText能扫描到TexLive安装目录下的字体： /usr/local/texlive/2019/texmf-dist/fonts/truetype/
 	也能扫描到系统已经安装的字体。例如我的Mac环境，字体安装路径：/Users/<username>/Library/Fonts
 	通常不想安装字体到系统的话，拷贝至TextLive的字体发布目录即可。运行：
 	luaotfload-tool 重建LuaTex字体数据库
+	
+	update font map:	sudo updmap-sys	
 	
 （1.4）字体的声明与使用：
 在TEX源文件中直接使用已经安装的True type文件名称（字体文件名，带后缀）：
@@ -53,54 +68,9 @@ Latex 手动安装宏包(.sty):
 自定义字体声明如下（也是直接使用字体文件名称）：	
     \newfontfamily\Kai{SourceHanSansTC-Regular.otf}
 	
+	\renewenvironment{quote}{\kaishu\quotateold{\parindent2\Cwd}}{\endquoteold}
 	
-	
-样板模版:
-\documentclass[a5paper, 11pt]{ltjtbook} %ltjbook%
-\usepackage{luatexja}
-\usepackage{luatexja-fontspec}
-\usepackage[a5paper, scale = 0.75, centering]{geometry}
-\usepackage{moresize}
-\usepackage{tocloft}
-\usepackage[hidelinks, plainpages = false, unicode = true]{hyperref}
-\usepackage{bookmark}
-\usepackage{endnotes}
-
-%\setmainfont{Arno Pro}
-%\setsansfont{Myriad Pro}
-
-\setmainjfont[BoldFont = SourceHanSerifTC-Bold.otf]{SourceHanSerifTC-Regular.otf}
-\setsansjfont[BoldFont = SourceHanSansTC-Bold.otf]{SourceHanSansTC-Regular.otf}
-\newjfontfamily{\quotejfont}{FZKT_GB18030.ttf}
-% \newjfontfamily{\quotejfont}{SourceHanSansTC-Regular.otf}
-
-\setlength\columnsep{3\Cwd}
-\setlength\parindent{2em}
-\setlength{\parskip}{0.5em} 
-
-\def\enoteheading{\section*{\notesname}%
-  %\markboth{\notesname}{\notesname}}%
-  \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
-\makeatother
-  
-\let\quotationold\quotation
-\let\endquotationold\endquotation
-\renewenvironment{quotation}{\quotejfont\quotationold}{\endquotationold}
-
-\renewcommand{\contentsname}{目錄}
-\renewcommand{\cftchapfont}{}
-\renewcommand{\cftchappagefont}{}
-\renewcommand{\notesname}{注}
-
-\input{title}
-\date{}
-
-\begin{document}
-\maketitle
-\tableofcontents
-\input{contents}
-\end{document}
-
-	
+	\newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 	
 
+FontCreator 造字注意Glyph的RSB数值！ https://glyphsapp.com/blog/new-features-in-glyphs-2-6 (Right side bearing)

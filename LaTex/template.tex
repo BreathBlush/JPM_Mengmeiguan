@@ -1,20 +1,24 @@
-\documentclass[a5paper, 11pt]{ltjtbook} %ltjbook%
+\documentclass[a5paper, 12pt]{ltjtbook} %ltjbook% ltjtbook
 \usepackage{luatexja}
+%\usepackage[abspath]{currfile}
 \usepackage{luatexja-fontspec}
 \usepackage[a5paper, scale = 0.75, centering]{geometry}
 \usepackage{moresize}
 \usepackage{tocloft}
 \usepackage[hidelinks, plainpages = false, unicode = true]{hyperref}
+\usepackage{pdfpages}
 \usepackage{bookmark}
 \usepackage{endnotes}
 
 %\setmainfont{Arno Pro}
 %\setsansfont{Myriad Pro}
 
-\setmainjfont[BoldFont = SourceHanSerifSC-Bold.otf]{SourceHanSerifSC-Regular.otf}
-\setsansjfont[BoldFont = SourceHanSansTC-Bold.otf]{SourceHanSansTC-Regular.otf}
+\setmainjfont[BoldFont = SourceHanSerifSC-Bold.otf]{STZHONGS.otf}
+\setsansjfont[BoldFont = SourceHanSansSC-Bold.otf]{STZHONGS.otf}
+%\tfont\T=file:STZHONGS.otf:jfm=ujisv;-vert 
+
 %\newjfontfamily{\titlejfont}{A-OTF-OutaiKaiStd-Light.otf}
-\newjfontfamily{\quotejfont}{AdobeKaitiStd-Regular.otf}
+\newjfontfamily{\kaishu}{AdobeKaitiStd-Regular.otf}
 %\newjfontfamily{\quotejfont}{FZKT_GB18030.ttf}
 
 \setlength\columnsep{3\Cwd}
@@ -27,12 +31,26 @@
   
 \let\quotationold\quotation
 \let\endquotationold\endquotation
-\renewenvironment{quotation}{\quotejfont\quotationold}{\endquotationold}
+\renewenvironment{quotation}{\kaishu\quotationold}{\endquotationold}
+
+\newenvironment{myquote0}{%
+\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent\setlength{\hangindent}{0em}\hangafter=0}\kaishu\raggedright}
+{\par%
+%\vspace{0.5em}
+}
+
+\newenvironment{myquote}[1][\setlength{\hangindent}{4em}]{%
+\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent#1\hangafter=0}\kaishu\raggedright}
+{\par%
+%\vspace{0.5em}
+}
 
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\cftchapfont}{}
 \renewcommand{\cftchappagefont}{}
 \renewcommand{\notesname}{注}
+
+\newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 
 \input{title}
 \date{}
