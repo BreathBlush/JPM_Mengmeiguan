@@ -39,8 +39,8 @@
 %\vspace{0.5em}
 }
 
-\newenvironment{myquote}[1][\setlength{\hangindent}{4em}]{%
-\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent#1\hangafter=0}\kaishu\raggedright}
+\newenvironment{myquote}{\par%
+\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent\setlength{\hangindent}{4em}\hangafter=0}\kaishu\raggedright}
 {\par%
 %\vspace{0.5em}
 }
