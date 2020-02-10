@@ -15,11 +15,11 @@
 
 \setmainjfont[BoldFont = SourceHanSerifSC-Bold.otf]{STZHONGS.otf}
 \setsansjfont[BoldFont = SourceHanSansSC-Bold.otf]{STZHONGS.otf}
-%\tfont\T=file:STZHONGS.otf:jfm=ujisv;-vert 
 
 %\newjfontfamily{\titlejfont}{A-OTF-OutaiKaiStd-Light.otf}
 \newjfontfamily{\kaishu}{AdobeKaitiStd-Regular.otf}
 %\newjfontfamily{\quotejfont}{FZKT_GB18030.ttf}
+\newjfontfamily{\markfont}{STZHONGS.otf}
 
 \setlength\columnsep{3\Cwd}
 \setlength\parindent{2em}
@@ -48,9 +48,10 @@
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\cftchapfont}{}
 \renewcommand{\cftchappagefont}{}
-\renewcommand{\notesname}{注}
+\renewcommand{\notesname}{註釋}
 
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
+\newcommand{\marktext}{\markfont}{\selectfont}
 
 \input{title}
 \date{}
