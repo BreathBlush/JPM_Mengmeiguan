@@ -31,16 +31,6 @@
   \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
 \makeatother
  
-\let\quotationold\quotation
-\let\endquotationold\endquotation
-\renewenvironment{quotation}{\kaishu\quotationold}{\endquotationold}
-
-\newenvironment{myquote0}{%
-\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent\setlength{\hangindent}{0em}\hangafter=0}\kaishu\raggedright}
-{\par%
-%\vspace{0.5em}
-}
-
 \newenvironment{myquoteold}[1][\kaishu]{\par%
 	\vspace{0.5em}#1%
 	\rightskip=1em%
@@ -49,6 +39,12 @@
 	}
 {\par%
 	%\vspace{0.5em}
+}
+
+\newenvironment{myquote0}{%
+\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent\setlength{\hangindent}{0em}\hangafter=0}\kaishu\raggedright}
+{\par%
+%\vspace{0.5em}
 }
 
 %https://tex.stackexchange.com/questions/300340/topsep-itemsep-partopsep-and-parsep-what-does-each-of-them-mean-and-wha
@@ -68,7 +64,7 @@
    	 	\rightmargin1em%
 	}%
    	\raggedright\item\relax
-}{\endlist\markfont\vspace{-0.5em}\par}
+}{\endlist\selectfont\vspace{-0.5em}\par}
 
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\cftchapfont}{}
@@ -105,7 +101,6 @@
 \pdfbookmark{\contentsname}{toc}
 %prevent the 1st page of TOC generate foot page number:
 \addtocontents{toc}{\protect\thispagestyle{empty}}
-\markboth{夢梅館本《金瓶梅詞話》}{目錄}
 %\mainmatter
 
 \pagenumbering{zhdig}
