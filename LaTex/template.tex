@@ -1,5 +1,6 @@
-\documentclass[a5paper, 12pt, oneside]{ltjtbook} %ltjbook% ltjtbook %declare oneside will prevend insert blank pages
+\documentclass[a5paper, 12pt, twoside, openany]{ltjtbook} %ltjbook% ltjtbook %declare oneside will prevend insert blank pages
 \usepackage{luatexja}
+\usepackage{luatexja-ruby}
 %\usepackage[abspath]{currfile}
 \usepackage{luatexja-fontspec}
 \usepackage[a5paper, scale = 0.75, centering]{geometry}
@@ -9,6 +10,7 @@
 \usepackage{pdfpages}
 \usepackage{bookmark}
 \usepackage{endnotes}
+\usepackage{zhnumber}
 
 %\setmainfont{Arno Pro}
 %\setsansfont{Myriad Pro}
@@ -28,7 +30,7 @@
 \def\enoteheading{\section*{\notesname}%
   \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
 \makeatother
-  
+ 
 \let\quotationold\quotation
 \let\endquotationold\endquotation
 \renewenvironment{quotation}{\kaishu\quotationold}{\endquotationold}
@@ -39,11 +41,34 @@
 %\vspace{0.5em}
 }
 
-\newenvironment{myquote}{\par%
-\vspace{0.5em}\setlength{\parskip}{0em}\everypar{\noindent\setlength{\hangindent}{4em}\hangafter=0}\kaishu\raggedright}
+\newenvironment{myquoteold}[1][\kaishu]{\par%
+	\vspace{0.5em}#1%
+	\rightskip=1em%
+	\setlength{\parskip}{0em}%
+	\everypar{\noindent\setlength{\hangindent}{4em}\hangafter=0\raggedright}%
+	}
 {\par%
-%\vspace{0.5em}
+	%\vspace{0.5em}
 }
+
+%https://tex.stackexchange.com/questions/300340/topsep-itemsep-partopsep-and-parsep-what-does-each-of-them-mean-and-wha
+%https://tex.stackexchange.com/questions/4959/how-do-i-indent-all-lines-of-a-paragraph-so-that-it-looks-like-a-blockquote/4970#4970
+\newenvironment{myquote}[1][\kaishu]{\par%
+	\setlength{\parskip}{0em}%
+	\setlength{\parsep}{0em}%
+	%\setlength{\topsep}{0em}%
+	#1%
+   	\list{}{%
+		\setlength{\topsep}{0.5em}%
+   		\noindent%
+   	 	\setlength{\parskip}{0em}%
+		\setlength{\parsep}{0em}%
+		\setlength\itemsep{0em}%
+   	 	\leftmargin4em%
+   	 	\rightmargin1em%
+	}%
+   	\raggedright\item\relax
+}{\endlist\markfont\vspace{-0.5em}\par}
 
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\cftchapfont}{}
@@ -52,13 +77,37 @@
 
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 \newcommand{\marktext}{\markfont}{\small}{\selectfont}
-\newcommand{\specialmark}{\setlength{\hangindent}{4em}\hangafter=0}{\markfont}{\selectfont}
 
 \input{title}
 \date{}
 
+\newcommand\mydot[1]{\scalebox{#1}{.}}
+\renewcommand\cftdot{\mydot{2}}
+\renewcommand\cftdotsep{3}
+%\renewcommand\cftpartnumwidth{6em}
+\renewcommand{\cftchapleader}{\hspace{0.2em}{\cftdotfill{\cftdotsep}}}
+%\renewcommand{\cftpnumalign}{l}
+
+%control the right margin of toc-dots:
+\makeatletter
+\def\@pnumwidth{3.2em}
+\makeatother
+
 \begin{document}
 \maketitle
+
+\pagestyle{headings}
+\pagenumbering{zhdig}
+\includepdf[pages={1},fitpaper=false]{tst.pdf}
+
+\cleardoublepage
 \tableofcontents
+\pdfbookmark{\contentsname}{toc}
+%prevent the 1st page of TOC generate foot page number:
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\markboth{夢梅館本《金瓶梅詞話》}{目錄}
+%\mainmatter
+
+\pagenumbering{zhdig}
 \input{contents2}
 \end{document}
