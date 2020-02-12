@@ -32,18 +32,46 @@ $sudo mktexlsr. 刷新字体
 \input{contents}
 \end{document}
 
+添加外部PDF页：
 \includepdf[pages={26},fitpaper=true]{tst.pdf}
 
+定义你的颜色：
+\definecolor{mydarkgray}{RGB}{96, 96, 96}
+
+重定义环境：
 \let\quotationold\quotation
 \let\endquotationold\endquotation
 \renewenvironment{quotation}{\kaishu\quotationold}{\endquotationold}
 
-自定义环境：
-\newenvironment{myquote0}{%
-\vspace{0.5em}\everypar{\noindent\setlength{\hangindent}{0em}\hangafter=0}\kaishu\raggedright}
-{\par%
-\vspace{0.5em}
-}
+自定义footnote的横线：
+\def\enoteheading{\section*{\notesname}%
+  \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
+\makeatother
+
+自定义环境（下面环境定义段落左右边距。同时消除段落之间额外距离。当然也可以自定义间距）：
+Latex段落松紧：
+https://tex.stackexchange.com/questions/4959/how-do-i-indent-all-lines-of-a-paragraph-so-that-it-looks-like-a-blockquote/4970#4970
+
+\newenvironment{myquote}[1][\kaishu]{\par%
+	\setlength{\parskip}{0em}%
+	\setlength{\parsep}{0em}%
+	%\setlength{\topsep}{0em}%
+	#1%
+   	\list{}{%
+		\setlength{\topsep}{0.5em}%
+   		\noindent%
+   	 	\setlength{\parskip}{0em}%
+		\setlength{\parsep}{0em}%
+		\setlength\itemsep{0em}%
+   	 	\leftmargin4em%
+   	 	\rightmargin1em%
+	}%
+   	\raggedright\item\relax
+}{\endlist\selectfont\vspace{-0.5em}\par}
+使用时：
+\begin{myquote}[]
+\end{myquote}
+
 
 \newenvironment{myquote}[1][\setlength{\hangindent}{4em}]{%
 \vspace{0.5em}\everypar{\noindent#1\hangafter=0}\kaishu\raggedright}
@@ -51,6 +79,31 @@ $sudo mktexlsr. 刷新字体
 \vspace{0.5em}
 }
 
+右对齐：建议使用\raggedleft，不建议使用\flushright。因为会增加额外垂直空间。左对齐同样注意！
+
+目录加点：
+\newcommand\mydot[1]{\scalebox{#1}{.}}
+\renewcommand\cftdot{\mydot{2}}
+\renewcommand\cftdotsep{3}
+%\renewcommand\cftpartnumwidth{6em}
+\renewcommand{\cftchapleader}{\hspace{0.2em}{\cftdotfill{\cftdotsep}}}
+%\renewcommand{\cftpnumalign}{l}
+
+%control the right margin of toc-dots:
+\makeatletter
+\def\@pnumwidth{3.2em}
+\makeatother
+
+Zh-Number宏包：https://ctan.org/pkg/zhnumber。中文页码：
+\pagenumbering{zhdig}
+
+添加目录本身到PDF书签（去除目录第一页footer页码）：
+\cleardoublepage
+\tableofcontents
+\pdfbookmark{\contentsname}{toc}
+%prevent the 1st page of TOC generate foot page number:
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+%\mainmatter
 
 （1.3）字体文件的安装：
     LuaText能扫描到TexLive安装目录下的字体： /usr/local/texlive/2019/texmf-dist/fonts/truetype/
