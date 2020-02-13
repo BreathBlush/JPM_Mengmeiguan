@@ -31,7 +31,12 @@
 \def\enoteheading{\section*{\notesname}%
   \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
 \makeatother
- 
+
+%use customized quotation: 
+\let\quotationold\quotation
+\let\endquotationold\endquotation
+\renewenvironment{quotation}{\kaishu\quotationold}{\endquotationold}
+
 \newenvironment{myquoteold}[1][\kaishu]{\par%
 	\vspace{0.5em}#1%
 	\rightskip=1em%
