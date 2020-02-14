@@ -12,6 +12,7 @@
 \usepackage{endnotes}
 \usepackage{zhnumber}
 \usepackage{xcolor}
+\usepackage{float}
 
 %\setmainfont{Arno Pro}
 %\setsansfont{Myriad Pro}
@@ -99,6 +100,23 @@
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 \newcommand{\marktext}{\markfont}{\small}{\selectfont}
 
+
+
+\makeatletter
+\let\old@endpart\@endpart
+\renewcommand\@endpart{{\hskip5em\vskip1em}{\insertlogofigure}\old@endpart}
+\makeatother
+
+\newcommand{\insertlogofigure}{\vspace{-\baselineskip}%    
+    \begin{figure}[H]%
+    \vspace*{-0.5em}%
+    \hspace*{1cm}%
+    \scalebox{1}[-1]{\includegraphics[keepaspectratio=true,scale=0.7]{flower.jpg}}%
+    %\includegraphics[keepaspectratio=true,scale=0.7]{flower.jpg}%
+    \end{figure}%
+}
+
+  
 \input{title}
 \date{}
 
