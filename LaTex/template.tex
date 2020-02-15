@@ -13,6 +13,7 @@
 \usepackage{zhnumber}
 \usepackage{xcolor}
 \usepackage{float}
+\usepackage{lipsum}
 
 %\setmainfont{Arno Pro}
 %\setsansfont{Myriad Pro}
@@ -100,12 +101,30 @@
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 \newcommand{\marktext}{\markfont}{\small}{\selectfont}
 
+    
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
+\newcommand{\headfont}{\gtfamily\sffamily}
 
+\makeatletter	%begin definition with @
 
-\makeatletter
+%copied from file "ltjsbook.cls" which can customize chapter font size:
+\def\@makeschapterhead#1{%
+  %\vspace*{2\Cvs}  %original value
+  \vskip 2\Cvs
+  {\parindent \z@ \raggedright
+    \normalfont
+    \interlinepenalty\@M
+    \LARGE \headfont #1\par\nobreak
+    \vskip 1\Cvs}
+    \thispagestyle{empty}}
+    
 \let\old@endpart\@endpart
 \renewcommand\@endpart{{\hskip5em\vskip1em}{\insertlogofigure}\old@endpart}
-\makeatother
+
+\makeatother	%begin definition with @
+%--------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
 \newcommand{\insertlogofigure}{\vspace{-\baselineskip}%    
     \begin{figure}[H]%
@@ -115,7 +134,6 @@
     %\includegraphics[keepaspectratio=true,scale=0.7]{flower.jpg}%
     \end{figure}%
 }
-
   
 \input{title}
 \date{}
