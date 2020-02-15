@@ -1,4 +1,4 @@
-\documentclass[a5paper, 12pt, twoside, openany]{ltjtbook} %ltjbook% ltjtbook %declare oneside will prevend insert blank pages
+\documentclass[a5paper, 12pt, twoside, openany]{ltjtbook} %ltjbook% ltjtbook %declare oneside / or twoside with "openany" will prevent blank pages
 \usepackage{luatexja}
 \usepackage{luatexja-ruby}
 %\usepackage[abspath]{currfile}
@@ -101,12 +101,12 @@
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 \newcommand{\marktext}{\markfont}{\small}{\selectfont}
 
-    
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
-\newcommand{\headfont}{\gtfamily\sffamily}
-
 \makeatletter	%begin definition with @
+
+\newcommand{\titlename}{夢梅館校本《金瓶梅詞話》}
+\newcommand{\headfont}{\gtfamily\sffamily}
 
 %copied from file "ltjsbook.cls" which can customize chapter font size:
 \def\@makeschapterhead#1{%
@@ -115,12 +115,25 @@
   {\parindent \z@ \raggedright
     \normalfont
     \interlinepenalty\@M
-    \huge \headfont #1\par\nobreak  %huge: 28pt / Huge: 33pt
+    \LARGE \headfont #1\par\nobreak  %LARGE: 25pt / huge: 28pt / Huge: 33pt / 
     \vskip 2\Cvs}
     \thispagestyle{empty}}
     
 \let\old@endpart\@endpart
 \renewcommand\@endpart{{\hskip5em\vskip1em}{\insertlogofigure}\old@endpart}
+
+\newcommand{\tableofcontentslocal}{%
+  \if@twocolumn\@restonecoltrue\onecolumn
+  \else\@restonecolfalse\fi
+  \chapter*{\contentsname
+    \@mkboth{\titlename}{\contentsname}%
+  }\@starttoc{toc}%
+  \if@restonecol\twocolumn\fi
+}
+
+%\renewcommand\cftchapafterpnum{\vskip0pt}
+\renewcommand\cftbeforepartskip{4pt}
+\renewcommand\cftbeforechapskip{1pt}
 
 \makeatother	%begin definition with @
 %--------------------------------------------------------------------------
@@ -140,7 +153,7 @@
 
 \newcommand\mydot[1]{\scalebox{#1}{.}}
 \renewcommand\cftdot{\mydot{2}}
-\renewcommand\cftdotsep{3}
+\renewcommand\cftdotsep{2}
 %\renewcommand\cftpartnumwidth{6em}
 \renewcommand{\cftchapleader}{\hspace{0.2em}{\cftdotfill{\cftdotsep}}}
 %\renewcommand{\cftpnumalign}{l}
@@ -155,14 +168,14 @@
 
 \pagestyle{headings}
 \pagenumbering{zhdig}
-\includepdf[pages={1},fitpaper=false]{tst.pdf}
+%\includepdf[pages={1},fitpaper=false]{tst.pdf}
 
 \cleardoublepage
-\tableofcontents
+\tableofcontentslocal
 \pdfbookmark{\contentsname}{toc}
 %prevent the 1st page of TOC generate foot page number:
 \addtocontents{toc}{\protect\thispagestyle{empty}}
-%\mainmatter
+\mainmatter
 
 \pagenumbering{zhdig}
 \input{contents2}
