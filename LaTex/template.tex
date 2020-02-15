@@ -176,7 +176,10 @@
 
 \pagestyle{headings}
 \pagenumbering{zhdig}
-%\includepdf[pages={1},fitpaper=false]{tst.pdf}
+
+\pdfbookmark{書名頁}{}
+\pdfbookmark{封面}{}
+\includepdf[pages={1},fitpaper=false]{fm.pdf}
 
 \cleardoublepage
 \tableofcontentslocal
@@ -187,4 +190,7 @@
 
 \pagenumbering{zhdig}
 \input{contents2}
+
+\pdfbookmark{封底}{}
+\includepdf[pages={1},fitpaper=false]{fd.pdf}
 \end{document}
