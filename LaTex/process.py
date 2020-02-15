@@ -6,6 +6,9 @@ def list_folders_files(path, suffixes_filters = []):
     list_folders = []
     list_files = []
     for file in os.listdir(path):
+        if (not file.startswith("chapter")):
+            continue
+            
         file_path = os.path.join(path, file)
         if os.path.isdir(file_path):
             list_folders.append(file)
@@ -49,11 +52,40 @@ def processFile(path_i, fileName):
     with open(full_path, 'wt') as file:    
         file.writelines(output_lines_array)
 
+def processFile2(path_i, fileName):
+    full_path = os.path.join(path_i, fileName)
+    # print(full_path)
+    
+    tmp_str = ''
+    count = 0
+    with open(full_path, 'rt') as file: 
+        tmp_str = fileName + ": "
+        
+        for line_string in file:
+            index = 0
+            index = line_string.find('〈', index)
+            while (index >= 0):
+                index2 = line_string.find('〉', index + 1)
+                if (index2 > 0):
+                    if (count > 0): 
+                        tmp_str += ','
+                    tmp_str += line_string[index : (index2 + 1)]
+                    # print("file: %s; string: %s" %(fileName, str_tmp))
+                    index = index2 + 1
+                    count += 1
+                        
+                index = line_string.find('〈', index)
+        
+    if (count > 0):
+        print(tmp_str)
+                
 if __name__ == '__main__':
     # batRename(sys.argv)
     suffixes_filters = []
     
     suffixes_filters.append(".tex")
     (list_folders, list_files) = list_folders_files('./sub', suffixes_filters)
-    for item in list_files:
-        processFile('./sub', item)
+    print("files: %d" % len(list_files))
+    
+    for item in sorted(list_files):
+        processFile2('./sub', item)
