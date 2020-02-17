@@ -3,7 +3,7 @@
 \usepackage{luatexja-ruby}
 %\usepackage[abspath]{currfile}
 \usepackage{luatexja-fontspec}
-\usepackage[a5paper, scale = 0.75, centering]{geometry}
+\usepackage[a5paper, scale = 0.75, bottom = 0.8in, top = 1.2in, centering]{geometry}
 \usepackage{moresize}
 \usepackage{tocloft}
 \usepackage[hidelinks, plainpages = false, unicode = true]{hyperref}
@@ -23,7 +23,6 @@
 
 %\newjfontfamily{\titlejfont}{A-OTF-OutaiKaiStd-Light.otf}
 \newjfontfamily{\kaishu}{AdobeKaitiStd-Regular.otf}
-%\newjfontfamily{\quotejfont}{FZKT_GB18030.ttf}
 \newjfontfamily{\markfont}{STZHONGS.otf}
 
 \setlength\columnsep{3\Cwd}
@@ -33,7 +32,7 @@
 \def\enoteheading{\subsection*{\notesname}%
   \mbox{}\par\vskip -2.5\baselineskip\noindent%
   %\rule{.5\textwidth}{0.4pt}%
-  \rule{3em}{0.6pt}%
+  \rule{3em}{0.4pt}%
   \par\vskip 0.0\baselineskip}
 \makeatother
 
@@ -104,14 +103,32 @@
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 \newcommand{\marktext}{\markfont}{\small}{\selectfont}
 
+\newcommand{\titlename}{夢梅館校本《金瓶梅詞話》}
+
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 \makeatletter	%begin definition with @
 
-\newcommand{\titlename}{夢梅館校本《金瓶梅詞話》}
-\newcommand{\headfont}{\gtfamily\sffamily}
-
+\def\ps@headings{\let\ps@jpl@in\ps@headnombre
+  \let\@oddfoot\@empty\let\@evenfoot\@empty
+  \def\@evenhead{\small\color{lightgray}\thepage\hfil\leftmark}%
+  \def\@oddhead{\small\color{lightgray}{\rightmark}\hfil\thepage}%
+  \let\@mkboth\markboth
+\def\chaptermark##1{\markboth{%
+   \ifnum \c@secnumdepth >\m@ne
+     \if@mainmatter
+       \@chapapp\thechapter\@chappos\hskip1\zw
+     \fi
+   \fi
+   ##1}{}}%
+\def\sectionmark##1{\markright{%
+   \ifnum \c@secnumdepth >\z@ \thesection.\hskip1\zw\fi
+   ##1}}%
+}
+  
 %copied from file "ltjsbook.cls" which can customize chapter font size:
+\newcommand{\headfont}{\gtfamily\sffamily}	%without this line, "makeschapterhead" can't compile
+
 \def\@makeschapterhead#1{%
   %\vspace*{2\Cvs}  %original value
   \vskip 2\Cvs
@@ -125,7 +142,7 @@
     \setcounter{footnote}{0}}  %reset footnote counter 
     
 \let\old@endpart\@endpart
-\renewcommand\@endpart{{\hskip5em\vskip1em}{\insertlogofigure}\old@endpart}
+\renewcommand\@endpart{{\hskip5em\vskip1em}{\insertflower}\old@endpart}
 
 \newcommand{\tableofcontentslocal}{%
   \if@twocolumn\@restonecoltrue\onecolumn
@@ -140,7 +157,7 @@
 \renewcommand{\theendnote}{(\zhdig{endnote})}
 
 %\def\@makeenmark{\hbox{\@textsuperscript{\normalfont\@theenmark}}}
-\def\@makeenmark{\hbox{\tiny{\normalfont\@theenmark}\small}}
+\def\@makeenmark{\hbox{\tiny\color{gray}{\normalfont\@theenmark}\small}}
 
 \def\enoteformat{\rightskip\z@ \leftskip\z@ \parindent=1.2em
   \leavevmode\llap{\makeenmark}\rightskip 0.5em\setlength{\hangindent}{1.5em}\small\kaishu}
@@ -153,19 +170,18 @@
 %--------------------------------------------------------------------------
 %--------------------------------------------------------------------------
 
-\newcommand{\insertlogofigure}{\vspace{-\baselineskip}%    
+\newcommand{\insertflower}{\vspace{-\baselineskip}%    
     \begin{figure}[H]%
     \vspace*{-0.5em}%
     \hspace*{1cm}%
-    \scalebox{1}[-1]{\includegraphics[keepaspectratio=true,scale=0.7]{flower.jpg}}%
-    %\includegraphics[keepaspectratio=true,scale=0.7]{flower.jpg}%
+    \scalebox{1}[-1]{\includegraphics[keepaspectratio=true,scale=0.7, angle=90]{flower.jpg}}%
+    %\includegraphics[keepaspectratio=true,scale=0.7, angle = -90]{flower.jpg}%
     \end{figure}%
 }
   
-\newcommand{\insertauthorlog}{\vspace{-\baselineskip}%    
+\newcommand{\insertauthorlogo}{\vspace{-3.2\baselineskip}%    
     \begin{figure}[H]%
-    \vspace*{-2.8em}%
-    \hspace*{7cm}%
+    \hspace*{7.2cm}%
     \includegraphics[keepaspectratio=true,scale=0.05, angle=90]{qrcode.png}%
     \end{figure}%
 }
