@@ -30,8 +30,11 @@
 \setlength\parindent{2em}
 \setlength{\parskip}{0.5em} 
 
-\def\enoteheading{\section*{\notesname}%
-  \mbox{}\par\vskip-2.3\baselineskip\noindent\rule{.5\textwidth}{0.4pt}\par\vskip\baselineskip}
+\def\enoteheading{\subsection*{\notesname}%
+  \mbox{}\par\vskip -2.5\baselineskip\noindent%
+  %\rule{.5\textwidth}{0.4pt}%
+  \rule{3em}{0.6pt}%
+  \par\vskip 0.0\baselineskip}
 \makeatother
 
 %use customized quotation: 
@@ -96,7 +99,7 @@
 \renewcommand{\contentsname}{目錄}
 \renewcommand{\cftchapfont}{}
 \renewcommand{\cftchappagefont}{}
-\renewcommand{\notesname}{註釋}
+\renewcommand{\notesname}{註  釋}
 
 \newcommand{\innerzhushi}{\kaishu}{\small}{\selectfont}
 \newcommand{\marktext}{\markfont}{\small}{\selectfont}
@@ -131,6 +134,15 @@
   \if@restonecol\twocolumn\fi
 }
 
+%https://github.com/rf-latex/endnotes/blob/master/endnotes.sty
+\renewcommand{\theendnote}{(\zhdig{endnote})}
+
+%\def\@makeenmark{\hbox{\@textsuperscript{\normalfont\@theenmark}}}
+\def\@makeenmark{\hbox{\tiny{\normalfont\@theenmark}\small}}
+
+\def\enoteformat{\rightskip\z@ \leftskip\z@ \parindent=1.2em
+  \leavevmode\llap{\makeenmark}\rightskip 0.5em\setlength{\hangindent}{1.5em}\small\kaishu}
+    	 
 %\renewcommand\cftchapafterpnum{\vskip0pt}
 \renewcommand\cftbeforepartskip{4pt}
 \renewcommand\cftbeforechapskip{1pt}
