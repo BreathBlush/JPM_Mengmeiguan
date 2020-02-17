@@ -120,7 +120,9 @@
     \interlinepenalty\@M
     \LARGE \headfont #1\par\nobreak  %LARGE: 25pt / huge: 28pt / Huge: 33pt / 
     \vskip 2\Cvs}
-    \thispagestyle{empty}}
+    \thispagestyle{empty}      %no page number shows on head or foot
+    \setcounter{endnote}{0}    %reset endnote counter
+    \setcounter{footnote}{0}}  %reset footnote counter 
     
 \let\old@endpart\@endpart
 \renewcommand\@endpart{{\hskip5em\vskip1em}{\insertlogofigure}\old@endpart}
