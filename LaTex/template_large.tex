@@ -33,12 +33,11 @@
 \let\normalsizeold\normalsize
 \renewcommand\normalsize\large
 \renewcommand\small\normalsizeold
-%\renewcommand\tiny\smallsizeold
 
 \def\enoteheading{\subsection*{\notesname}%
   \mbox{}\par\vskip -2.5\baselineskip\noindent%
   %\rule{.5\textwidth}{0.4pt}%
-  \rule{3em}{0.4pt}%
+  \rule{2.5em}{0.5pt}%
   \par\vskip 0.0\baselineskip}
 \makeatother
 
@@ -160,13 +159,16 @@
 }
 
 %https://github.com/rf-latex/endnotes/blob/master/endnotes.sty
-\renewcommand{\theendnote}{(\zhdig{endnote})}
+\renewcommand{\theendnote}{（\zhdig{endnote}）}
 
 %\def\@makeenmark{\hbox{\@textsuperscript{\normalfont\@theenmark}}}
-\def\@makeenmark{\hbox{\tiny\color{gray}{\normalfont\@theenmark}\small}}
+\def\@makeenmark{\hbox{\scriptsize\color{gray}{\kaishu\@theenmark}\small}}
 
-\def\enoteformat{\rightskip\z@ \leftskip\z@ \parindent=1.2em
-  \leavevmode\llap{\makeenmark}\rightskip 0.5em\setlength{\hangindent}{1.5em}\small\kaishu}
+%this for the endnote mark shows at the end of chapter: 
+\def\makeenmarktwo{\hbox{\kaishu\smallsizeold{\@theenmark}\hspace{0.5em}}}
+
+\def\enoteformat{\rightskip\z@ \leftskip\z@ \parindent\z@
+  \leavevmode{\makeenmarktwo}\leftskip 1em\rightskip 1em\setlength{\hangindent}{2.5em}\kaishu\normalsizeold}
     	 
 %\renewcommand\cftchapafterpnum{\vskip0pt}
 \renewcommand\cftbeforepartskip{4pt}
