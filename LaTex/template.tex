@@ -57,6 +57,11 @@
 %\vspace{0.5em}
 }
 
+\newenvironment{declareqianyan}{%
+  \vspace{-4.5em}%
+  \flushright\kaishu%
+}{\vspace{4.5em}\relax\par}
+
 \definecolor{mydarkgray}{RGB}{96, 96, 96}
 
 %https://tex.stackexchange.com/questions/300340/topsep-itemsep-partopsep-and-parsep-what-does-each-of-them-mean-and-wha
@@ -111,8 +116,8 @@
 
 \def\ps@headings{\let\ps@jpl@in\ps@headnombre
   \let\@oddfoot\@empty\let\@evenfoot\@empty
-  \def\@evenhead{\small\color{lightgray}\thepage\hfil\leftmark}%
-  \def\@oddhead{\small\color{lightgray}{\rightmark}\hfil\thepage}%
+  \def\@evenhead{\footnotesize\thepage\hfil{\leftmark}}%
+  \def\@oddhead{\footnotesize{\rightmark}\hfil\thepage}%
   \let\@mkboth\markboth
 \def\chaptermark##1{\markboth{%
    \ifnum \c@secnumdepth >\m@ne
@@ -183,7 +188,7 @@
     \end{figure}%
 }
   
-\newcommand{\insertauthorlogo}{\vspace{-3.2\baselineskip}%    
+\newcommand{\insertauthorlogo}{\vspace{-4.0\baselineskip}%    
     \begin{figure}[H]%
     \hspace*{7.2cm}%
     \includegraphics[keepaspectratio=true,scale=0.05, angle=90]{qrcode.png}%
@@ -193,8 +198,8 @@
 \input{title}
 \date{}
 
-\newcommand\mydot[1]{\scalebox{#1}{.}}
-\renewcommand\cftdot{\mydot{2}}
+\newcommand\mydot[1]{\color{lightgray}\scalebox{#1}{.}}
+\renewcommand\cftdot{\mydot{1.5}}
 \renewcommand\cftdotsep{2}
 %\renewcommand\cftpartnumwidth{6em}
 \renewcommand{\cftchapleader}{\hspace{0.2em}{\cftdotfill{\cftdotsep}}}
